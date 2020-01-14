@@ -1,0 +1,561 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>数据准备说明 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="数据准备(Data Preparation)简称DP 一般是一个将发卡数据预产生和格式化的阶段,将需要的数据元素在本阶段生成加密并打包,交付给个人化系统(设备)对卡片进行个人化">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ge-ren-hua-shuo-ming.html" />
+    
+    
+    <link rel="prev" href="qi-ta-jin-rong-suan-fa.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chang-jian-suo-lve-ci.html">
+            
+                <a href="chang-jian-suo-lve-ci.html">
+            
+                    
+                    常见缩略词
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="chang-jian-gui-fan-biao-zhun.html">
+            
+                <a href="chang-jian-gui-fan-biao-zhun.html">
+            
+                    
+                    常见规范标准
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="jin-rong-ye-wu-chang-yong-suan-fa-shuo-ming.html">
+            
+                <a href="jin-rong-ye-wu-chang-yong-suan-fa-shuo-ming.html">
+            
+                    
+                    金融业务常用算法说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="ji-chu-jia-mi-zhi-shi.html">
+            
+                <a href="ji-chu-jia-mi-zhi-shi.html">
+            
+                    
+                    基础加密知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="yin-hang-ka-hao-yi-ji-xiao-yan-wei.html">
+            
+                <a href="yin-hang-ka-hao-yi-ji-xiao-yan-wei.html">
+            
+                    
+                    银行卡号以及校验位
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="ka-pian-yan-zheng-ma-suan-fa.html">
+            
+                <a href="ka-pian-yan-zheng-ma-suan-fa.html">
+            
+                    
+                    卡片验证码算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="ge-ren-shi-bie-ma-pin-xiao-yan.html">
+            
+                <a href="ge-ren-shi-bie-ma-pin-xiao-yan.html">
+            
+                    
+                    个人识别码(PIN)校验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="ge-ren-shi-bie-ma-guan-li-he-an-quan.html">
+            
+                <a href="ge-ren-shi-bie-ma-guan-li-he-an-quan.html">
+            
+                    
+                    个人识别码管理和安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="xiao-xi-jian-bie-suan-fa.html">
+            
+                <a href="xiao-xi-jian-bie-suan-fa.html">
+            
+                    
+                    消息鉴别算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="mi-yao-chan-sheng.html">
+            
+                <a href="mi-yao-chan-sheng.html">
+            
+                    
+                    密钥产生
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="ic-ka-mi-yao-fen-san.html">
+            
+                <a href="ic-ka-mi-yao-fen-san.html">
+            
+                    
+                    IC卡密钥分散
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="ic-ka-jiao-ben-an-quan-xiang-guan.html">
+            
+                <a href="ic-ka-jiao-ben-an-quan-xiang-guan.html">
+            
+                    
+                    IC卡脚本安全相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="qi-ta-jin-rong-suan-fa.html">
+            
+                <a href="qi-ta-jin-rong-suan-fa.html">
+            
+                    
+                    其他金融算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.15" data-path="dp-shu-ju-zhun-bei-shuo-ming.html">
+            
+                <a href="dp-shu-ju-zhun-bei-shuo-ming.html">
+            
+                    
+                    数据准备说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="ge-ren-hua-shuo-ming.html">
+            
+                <a href="ge-ren-hua-shuo-ming.html">
+            
+                    
+                    个人化说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">附录</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="fu-lu/shen-me-shi-hsm/">
+            
+                <a href="fu-lu/shen-me-shi-hsm/">
+            
+                    
+                    什么是HSM
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="fu-lu/shen-me-shi-hsm/hsm-jian-jie.html">
+            
+                <a href="fu-lu/shen-me-shi-hsm/hsm-jian-jie.html">
+            
+                    
+                    HSM 简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="fu-lu/shen-me-shi-hsm/hsm-yu-ruan-suan-fa-de-you-que-dian.html">
+            
+                <a href="fu-lu/shen-me-shi-hsm/hsm-yu-ruan-suan-fa-de-you-que-dian.html">
+            
+                    
+                    HSM 与 软算法的优缺点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="fu-lu/shen-me-shi-hsm/hsm-mi-yao-ti-xi.html">
+            
+                <a href="fu-lu/shen-me-shi-hsm/hsm-mi-yao-ti-xi.html">
+            
+                    
+                    HSM 密钥体系
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="fu-lu/untitled/">
+            
+                <a href="fu-lu/untitled/">
+            
+                    
+                    Untitled
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="fu-lu/untitled/8583-jin-rong-jiao-yi-bao-wen.html">
+            
+                <a href="fu-lu/untitled/8583-jin-rong-jiao-yi-bao-wen.html">
+            
+                    
+                    8583金融交易报文
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="fu-lu/untitled/shu-ju-jia-mi-gui-ze-biao-zhun.html">
+            
+                <a href="fu-lu/untitled/shu-ju-jia-mi-gui-ze-biao-zhun.html">
+            
+                    
+                    数据加密规则(标准)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="fu-lu/untitled/shu-ju-tian-chong-gui-ze-biao-zhun.html">
+            
+                <a href="fu-lu/untitled/shu-ju-tian-chong-gui-ze-biao-zhun.html">
+            
+                    
+                    数据填充规则(标准)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >数据准备说明</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x6570;&#x636E;&#x51C6;&#x5907;&#x8BF4;&#x660E;">&#x6570;&#x636E;&#x51C6;&#x5907;&#x8BF4;&#x660E;</h1>
+<p>DP&#x9636;&#x6BB5;</p>
+<pre><code class="lang-text"> &#x52A0;&#x5BC6; DES&#x3001;RSA&#x5BC6;&#x94A5;&#x3001;PIN&#x5BC6;&#x6587;&#x5FC5;&#x9700;&#x4F7F;&#x7528;TDES&#x7684;ECB&#x6A21;&#x5F0F;
+</code></pre>
+<p>&#x5916;&#x90E8;&#x8BA4;&#x8BC1;&#x6307;&#x4EE4; &#x9700;&#x8981;MAC&#x548C;&#x52A0;&#x5BC6;&#x65F6; &#x4F7F;&#x7528; CBC&#x6A21;&#x5F0F;&#xFF0C;IV &#x5168;0 &#xFF0C;&#x5F3A;&#x5236;&#x586B;&#x5145; <code>0x80</code></p>
+<ul>
+<li><p>&#x5916;&#x90E8;&#x8BA4;&#x8BC1;</p>
+<p>&#x4EE5;<code>&#x7EC8;&#x7AEF;&#x673A;</code>&#x4E3A;&#x89C6;&#x89D2;, &#x5361;&#x7247;&#x4E3A;&#x5916;&#x90E8;,&#x5373;&#x5361;&#x7247;&#x6267;&#x884C;&#x8BA4;&#x8BC1;,&#x8BA4;&#x8BC1;&#x7EC8;&#x7AEF;&#x673A;/&#x53D1;&#x5361;&#x884C;</p>
+</li>
+<li><p>&#x5185;&#x90E8;&#x8BA4;&#x8BC1;</p>
+<p>&#x4EE5;<code>&#x7EC8;&#x7AEF;&#x673A;</code>&#x4E3A;&#x89C6;&#x89D2;, &#x5185;&#x90E8;&#x5373;&#x81EA;&#x8EAB;,&#x5C31;&#x662F;&#x7EC8;&#x7AEF;&#x673A;&#x6267;&#x884C;&#x8BA4;&#x8BC1;,&#x8BA4;&#x8BC1;&#x5361;&#x7247;</p>
+</li>
+</ul>
+<p>DP &#x4F7F;&#x7528; TK &#x52A0;&#x5BC6;&#x654F;&#x611F;&#x6570;&#x636E;/&#x5BC6;&#x94A5;&#x540E;,&#x4EA4;&#x4ED8;&#x7ED9;&#x4E2A;&#x4EBA;&#x5316;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="qi-ta-jin-rong-suan-fa.html" class="navigation navigation-prev " aria-label="Previous page: 其他金融算法">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ge-ren-hua-shuo-ming.html" class="navigation navigation-next " aria-label="Next page: 个人化说明">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"description":"数据准备(Data Preparation)简称DP 一般是一个将发卡数据预产生和格式化的阶段,将需要的数据元素在本阶段生成加密并打包,交付给个人化系统(设备)对卡片进行个人化","title":"数据准备说明","level":"1.15","depth":1,"next":{"title":"个人化说明","level":"1.16","depth":1,"path":"ge-ren-hua-shuo-ming.md","ref":"ge-ren-hua-shuo-ming.md","articles":[]},"previous":{"title":"其他金融算法","level":"1.14","depth":1,"path":"qi-ta-jin-rong-suan-fa.md","ref":"qi-ta-jin-rong-suan-fa.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"dp-shu-ju-zhun-bei-shuo-ming.md","mtime":"2020-01-14T09:16:15.975Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-14T09:16:58.459Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

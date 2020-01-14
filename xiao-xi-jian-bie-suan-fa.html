@@ -1,0 +1,647 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>消息鉴别算法 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="mi-yao-chan-sheng.html" />
+    
+    
+    <link rel="prev" href="ge-ren-shi-bie-ma-guan-li-he-an-quan.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chang-jian-suo-lve-ci.html">
+            
+                <a href="chang-jian-suo-lve-ci.html">
+            
+                    
+                    常见缩略词
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="chang-jian-gui-fan-biao-zhun.html">
+            
+                <a href="chang-jian-gui-fan-biao-zhun.html">
+            
+                    
+                    常见规范标准
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="jin-rong-ye-wu-chang-yong-suan-fa-shuo-ming.html">
+            
+                <a href="jin-rong-ye-wu-chang-yong-suan-fa-shuo-ming.html">
+            
+                    
+                    金融业务常用算法说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="ji-chu-jia-mi-zhi-shi.html">
+            
+                <a href="ji-chu-jia-mi-zhi-shi.html">
+            
+                    
+                    基础加密知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="yin-hang-ka-hao-yi-ji-xiao-yan-wei.html">
+            
+                <a href="yin-hang-ka-hao-yi-ji-xiao-yan-wei.html">
+            
+                    
+                    银行卡号以及校验位
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="ka-pian-yan-zheng-ma-suan-fa.html">
+            
+                <a href="ka-pian-yan-zheng-ma-suan-fa.html">
+            
+                    
+                    卡片验证码算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="ge-ren-shi-bie-ma-pin-xiao-yan.html">
+            
+                <a href="ge-ren-shi-bie-ma-pin-xiao-yan.html">
+            
+                    
+                    个人识别码(PIN)校验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="ge-ren-shi-bie-ma-guan-li-he-an-quan.html">
+            
+                <a href="ge-ren-shi-bie-ma-guan-li-he-an-quan.html">
+            
+                    
+                    个人识别码管理和安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10" data-path="xiao-xi-jian-bie-suan-fa.html">
+            
+                <a href="xiao-xi-jian-bie-suan-fa.html">
+            
+                    
+                    消息鉴别算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="mi-yao-chan-sheng.html">
+            
+                <a href="mi-yao-chan-sheng.html">
+            
+                    
+                    密钥产生
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="ic-ka-mi-yao-fen-san.html">
+            
+                <a href="ic-ka-mi-yao-fen-san.html">
+            
+                    
+                    IC卡密钥分散
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="ic-ka-jiao-ben-an-quan-xiang-guan.html">
+            
+                <a href="ic-ka-jiao-ben-an-quan-xiang-guan.html">
+            
+                    
+                    IC卡脚本安全相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="qi-ta-jin-rong-suan-fa.html">
+            
+                <a href="qi-ta-jin-rong-suan-fa.html">
+            
+                    
+                    其他金融算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="dp-shu-ju-zhun-bei-shuo-ming.html">
+            
+                <a href="dp-shu-ju-zhun-bei-shuo-ming.html">
+            
+                    
+                    数据准备说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="ge-ren-hua-shuo-ming.html">
+            
+                <a href="ge-ren-hua-shuo-ming.html">
+            
+                    
+                    个人化说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">附录</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="fu-lu/shen-me-shi-hsm/">
+            
+                <a href="fu-lu/shen-me-shi-hsm/">
+            
+                    
+                    什么是HSM
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="fu-lu/shen-me-shi-hsm/hsm-jian-jie.html">
+            
+                <a href="fu-lu/shen-me-shi-hsm/hsm-jian-jie.html">
+            
+                    
+                    HSM 简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="fu-lu/shen-me-shi-hsm/hsm-yu-ruan-suan-fa-de-you-que-dian.html">
+            
+                <a href="fu-lu/shen-me-shi-hsm/hsm-yu-ruan-suan-fa-de-you-que-dian.html">
+            
+                    
+                    HSM 与 软算法的优缺点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="fu-lu/shen-me-shi-hsm/hsm-mi-yao-ti-xi.html">
+            
+                <a href="fu-lu/shen-me-shi-hsm/hsm-mi-yao-ti-xi.html">
+            
+                    
+                    HSM 密钥体系
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="fu-lu/untitled/">
+            
+                <a href="fu-lu/untitled/">
+            
+                    
+                    Untitled
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="fu-lu/untitled/8583-jin-rong-jiao-yi-bao-wen.html">
+            
+                <a href="fu-lu/untitled/8583-jin-rong-jiao-yi-bao-wen.html">
+            
+                    
+                    8583金融交易报文
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="fu-lu/untitled/shu-ju-jia-mi-gui-ze-biao-zhun.html">
+            
+                <a href="fu-lu/untitled/shu-ju-jia-mi-gui-ze-biao-zhun.html">
+            
+                    
+                    数据加密规则(标准)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="fu-lu/untitled/shu-ju-tian-chong-gui-ze-biao-zhun.html">
+            
+                <a href="fu-lu/untitled/shu-ju-tian-chong-gui-ze-biao-zhun.html">
+            
+                    
+                    数据填充规则(标准)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >消息鉴别算法</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x6D88;&#x606F;&#x9274;&#x522B;&#x7B97;&#x6CD5;">&#x6D88;&#x606F;&#x9274;&#x522B;&#x7B97;&#x6CD5;</h1>
+<h3 id=""> </h3>
+<p>&#x5728;&#x91D1;&#x878D;&#x9886;&#x57DF;&#x4EE5;&#x6D88;&#x606F;&#x9274;&#x522B;&#x7801;&#xFF08;Message Authentication Code &#x7B80;&#x79F0; MAC&#xFF09;&#x8FDB;&#x884C;&#x6D88;&#x606F;&#x8BA4;&#x8BC1;&#x9632;&#x7BE1;&#x6539;</p>
+<p>&#x57FA;&#x4E8E;&#x4EE5;&#x4E0A;&#x5BF9;&#x79F0;&#x7B97;&#x6CD5;&#x7684; &#x9274;&#x522B;&#x7B97;&#x6CD5;&#x8BA1;&#x7B97;&#x65F6;&#x9700;&#x8981;&#x8003;&#x8651;&#x4EE5;&#x4E0B;&#x51E0;&#x70B9;&#xFF08;&#x7F51;&#x7EDC;&#x6570;&#x636E;&#x6D41;&#x90FD;&#x662F;&#x9AD8;&#x4F4D;&#xFF09;</p>
+<ul>
+<li>&#x5F53;&#x7ED9;&#x5B9A;&#x7684;&#x6D88;&#x606F;&#x540E;&#xFF0C;&#x9700;&#x8981;&#x5BF9;&#x6570;&#x636E;&#x5206;&#x5757;&#x8BA1;&#x7B97;&#xFF0C;&#x5982;&#x679C;&#x6570;&#x636E;&#x4E0D;&#x8DB3;&#x4EE5;&#x8FDB;&#x884C;&#x52A0;&#x5BC6;&#x8FD0;&#x7B97;&#x7684;&#x6700;&#x5C0F;&#x5757;&#x957F;&#x5EA6;&#x5982;&#x4F55;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;</li>
+<li>&#x6B63;&#x597D;&#x8DB3;&#x591F;&#xFF0C;&#x662F;&#x5426;&#x6309;&#x7167;&#x586B;&#x5145;&#x89C4;&#x5219;&#x586B;&#x5145;</li>
+<li>&#x9700;&#x8981;&#x586B;&#x5145;&#xFF0C;&#x89C4;&#x5219;&#x5982;&#x4F55;</li>
+</ul>
+<p><a href="https://en.wikipedia.org/wiki/ISO/IEC_9797-1#Padding" target="_blank"><em>ISO/IEC 9797-1</em> Padding</a> &#x4E2D;&#x5E38;&#x89C1;&#x7684;&#x5982;&#x4E0B;&#x4E24;&#x79CD;</p>
+<ol>
+<li>&#x6309;&#x7167; bit&#x4E3A;&#x5355;&#x4F4D;&#x6765;&#x8BB2; &#x4E0D;&#x8DB3;&#x7684;&#x76F4;&#x63A5;&#x5728;&#x540E;&#x9762;&#x6309;&#x7167;bit &#x4F4D; &#x662F; 0 &#x6765;&#x7B97; &#x4E5F;&#x5C31;&#x662F; &#x6240;&#x8C13;&#x7684; &#x586B;&#x5145; 0x00</li>
+<li><p>&#x6309;&#x7167; bit&#x4E3A;&#x5355;&#x4F4D;&#x6765;&#x8BB2; &#x4E0D;&#x8DB3;&#x7684;&#x76F4;&#x63A5;&#x5728;&#x540E;&#x9762;&#x5148;&#x586B;&#x5145; &#x4E00;&#x4F4D; bit 1&#xFF0C;&#x4E0D;&#x8DB3;&#x7EE7;&#x7EED;&#x586B;&#x5145; bit 0&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x6240;&#x8C13;&#x7684;&#x586B;&#x5145; 0x80 &#x7136;&#x540E;&#x586B;&#x5145; 0x00  </p>
+<p> &#x57FA;&#x4E8E;&#x5546;&#x7B97;&#x3001;&#x56FD;&#x7B97;&#x7684;&#x91D1;&#x878D;&#x4E1A;&#x52A1;&#x7B97;&#x6CD5;&#x586B;&#x5145;&#x4E5F;&#x5C31;&#x8FD9;&#x4E24;&#x79CD;&#x3002;&#x4F46;&#x57FA;&#x4E8E;&#x6570;&#x636E;&#x52A0;&#x5BC6;&#x7684;&#x8FD8;&#x6709;PKCS5Padding/PKCS7Padding &#x5173;&#x4E8E;&#x6570;&#x636E;&#x586B;&#x5145;&#x7684;&#x66F4;&#x591A;&#x89C4;&#x5219;/&#x6807;&#x51C6;&#x53C2;&#x89C1;<a href="fu-lu/untitled/shu-ju-tian-chong-gui-ze-biao-zhun.html">&#x9644;&#x5F55;</a></p>
+</li>
+</ol>
+<p>&#x5F53;&#x6570;&#x636E;&#x5B8C;&#x6210;&#x586B;&#x5145;,&#x53EF;&#x4EE5;&#x5212;&#x5206;&#x4E3A;&#x5B8C;&#x6574;&#x5757;&#x540E;,&#x6211;&#x4EEC;&#x8FD8;&#x9700;&#x8981;&#x5173;&#x5FC3;&#x5BC6;&#x94A5;&#x5982;&#x4F55;&#x4F7F;&#x7528;</p>
+<ol>
+<li>&#x5BC6;&#x94A5;&#x5982;&#x4F55;&#x4F7F;&#x7528;<ul>
+<li>&#x76F4;&#x63A5;&#x7528;&#x4E8E;&#x8FDB;&#x884C;&#x6570;&#x636E;MAC                                                &#x666E;&#x901A;&#x7684;MAC</li>
+<li>&#x5BC6;&#x94A5;&#x8FDB;&#x884C;&#x79BB;&#x6563;&#x540E;&#x8FDB;&#x884C;&#x6570;&#x636E;MAC                                    PBOC&#x4E2D;&#x79BB;&#x6563;&#x5BC6;&#x94A5;&#x8FDB;&#x884C;MAC</li>
+<li>&#x5BC6;&#x94A5;&#x8FDB;&#x884C;&#x79BB;&#x6563;&#x540E;&#x518D;&#x6B21;&#x8FDB;&#x884C;&#x5206;&#x6563;&#xFF0C;&#x7136;&#x540E;&#x8FDB;&#x884C;MAC        IC&#x5361;&#x811A;&#x672C;MAC     &#xFF08;EMV PBOC&#xFF09;</li>
+</ul>
+</li>
+<li>&#x57FA;&#x4E8E;&#x4EE5;&#x4E0A;&#x7406;&#x8BBA;&#xFF0C;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x91C7;&#x7528;&#x5BC6;&#x94A5;&#x52A0;&#x5BC6;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x586B;&#x5145;&#x89C4;&#x5219;&#x7B49;&#x5F52;&#x7C7B;</li>
+</ol>
+<p>MAC&#x5B9E;&#x9645;&#x7684;&#x6807;&#x51C6;&#x6709;&#x5F88;&#x591A;,&#x5982;&#x4E0B;&#x662F;&#x5E38;&#x89C1;&#x6807;&#x51C6;&#x4E2D;&#x7684;&#x6458;&#x5F55;</p>
+<h4 id="x99-mac&#x7B97;&#x6CD5;-ansi-x99">X9.9 MAC&#x7B97;&#x6CD5; ANSI-X9.9</h4>
+<blockquote>
+<p>The Financial Institution (Wholesale) Message Authentication Standard (ANSI X9.9-1986)</p>
+<p>&#x5373;CBC-MAC (<a href="https://en.wikipedia.org/wiki/ISO/IEC_9797-1#MAC_algorithm_1" target="_blank">ISO/IEC 9797-1 Algorithm 1</a>) &#x4F46;&#x53EF;&#x4EE5;&#x6307; 3DES-CBC-MAC</p>
+</blockquote>
+<p>&#x8F93;&#x5165;&#x5BC6;&#x94A5;&#xFF1A;64bits&#xFF08;&#x5947;&#x6821;&#x9A8C;&#x53EF;&#x9009;&#xFF09;</p>
+<p>&#x5BC6;&#x94A5;&#x7B97;&#x6CD5;&#xFF1A;DES-CBC &#x5BC6;&#x94A5;&#x957F;&#x5EA6; 64Bits&#xFF0C;&#x5206;&#x7EC4;&#x957F;&#x5EA6; 64Bits&#xFF0C; &#x521D;&#x59CB;&#x5316;IV &#x5168;0</p>
+<p>&#x586B;&#x5145;&#x89C4;&#x5219;&#xFF1A;&#x4E0D;&#x8DB3;&#x65F6;&#x586B;&#x5145; bit 0</p>
+<p>&#x8F93;&#x51FA;&#xFF1A;8Byte &#x52A0;&#x5BC6;&#x7ED3;&#x679C;&#x5373;&#x4E3A;MAC</p>
+<h4 id="x919-mac&#x7B97;&#x6CD5;-ansi-x919">X9.19 MAC&#x7B97;&#x6CD5; ANSI-X9.19</h4>
+<blockquote>
+<p>The Financial Institution (Retail) Message Authentication Standard, ANSI X9.19 Optional Procedure 1 (<a href="https://en.wikipedia.org/wiki/ISO/IEC_9797-1#MAC_algorithm_3" target="_blank">ISO/IEC 9797-1 Algorithm 3</a>)</p>
+</blockquote>
+<p>&#x8F93;&#x5165;&#x5BC6;&#x94A5;&#xFF1A;128bits&#xFF08;&#x5947;&#x6821;&#x9A8C;&#x53EF;&#x9009;&#xFF09;</p>
+<p>&#x5BC6;&#x94A5;&#x7B97;&#x6CD5;&#xFF1A;DES-CBC &#x5BC6;&#x94A5;&#x957F;&#x5EA6; 64Bits&#xFF0C;&#x5206;&#x7EC4;&#x957F;&#x5EA6; 64Bits&#xFF0C; &#x521D;&#x59CB;&#x5316;IV &#x5168;0</p>
+<p>&#x586B;&#x5145;&#x89C4;&#x5219;&#xFF1A;&#x4E0D;&#x8DB3;&#x65F6;&#x586B;&#x5145; bit 0</p>
+<p>&#x7B97;&#x6CD5;&#x63CF;&#x8FF0;&#xFF1A;&#x5148;&#x53D6; &#x5BC6;&#x94A5;&#x5DE6;&#x534A;&#x90E8;&#x5206; 64bits&#xFF0C;&#x4F5C;&#x4E3A;&#x5BC6;&#x94A5;&#x8FDB;&#x884C;DES-CBC MAC&#xFF0C;&#x53D6;&#xFF08;&#x7ED3;&#x679C;&#xFF0C;&#x5BC6;&#x94A5;&#x53F3;&#x534A;&#x90E8;&#x5206; 64bits&#xFF09;&#x518D;&#x6B21;&#x8FDB;&#x884C;DES&#x89E3;&#x5BC6;&#xFF0C;&#x53D6;&#xFF08;&#x7ED3;&#x679C;&#xFF0C;&#x5BC6;&#x94A5;&#x524D; 64bits&#xFF09;&#x6700;&#x540E;&#x8FDB;&#x884C;DES&#x52A0;&#x5BC6;&#xFF0C;&#x53D6;&#x7ED3;&#x679C;</p>
+<p>&#x8F93;&#x51FA;&#xFF1A; 8Byte &#x52A0;&#x5BC6;&#x7ED3;&#x679C;&#x5373;&#x4E3A; MAC</p>
+<h4 id="&#x94F6;&#x8054;&#x8054;&#x673A;mac&#x7B97;&#x6CD5;">&#x94F6;&#x8054;&#x8054;&#x673A;MAC&#x7B97;&#x6CD5;</h4>
+<blockquote>
+<p>&#x4E3A;&#x4FDD;&#x8BC1;&#x6570;&#x636E;&#x7684;&#x5B89;&#x5168;&#x4F20;&#x8F93;&#xFF0C;&#x7F51;&#x7EDC;&#x4E2D;&#x7684;&#x62A5;&#x6587;&#x91C7;&#x7528;&#x4E86;PIN&#x52A0;&#x5BC6;&#x548C;&#x62A5;&#x6587;&#x6765;&#x6E90;&#x6B63;&#x786E;&#x6027;&#x9274;&#x522B;(MAC)&#x4E24;&#x79CD;&#x52A0;&#x5BC6;&#x6280;&#x672F;&#x3002;</p>
+<p>&#x57FA;&#x4E8E;DES/3DES&#x7B97;&#x6CD5;&#x7684;PIN&#x3001;MAC&#x957F;&#x5EA6;&#x4E3A;8&#x5B57;&#x8282;&#xFF1B;</p>
+<p>&#x57FA;&#x4E8E;SM4&#x7B97;&#x6CD5;&#x7684;PIN&#x4E3A;16&#x5B57;&#x8282;&#xFF0C;MAC&#x957F;&#x5EA6;&#x4E3A;8&#x5B57;&#x8282;&#x3002;</p>
+<p>&#x3010;&#x4E2D;&#x56FD;&#x94F6;&#x8054;&#x94F6;&#x884C;&#x5361;&#x4EA4;&#x6362;&#x7CFB;&#x7EDF;&#x6280;&#x672F;&#x89C4;&#x8303; &#x7B2C;4&#x90E8;&#x5206; &#x6570;&#x636E;&#x5B89;&#x5168;&#x4F20;&#x8F93;&#x63A7;&#x5236;&#x89C4;&#x8303; Q/CUP 006.4-2016&#x3011;</p>
+</blockquote>
+<ul>
+<li><p>&#x56FD;&#x9645;&#x7B97;&#x6CD5;</p>
+<blockquote>
+<p>&#x540C; X9.9 MAC &#x89C4;&#x5219;&#xFF0C;&#x4F46;&#x5BC6;&#x94A5;&#x957F;&#x5EA6;&#x652F;&#x6301; &#x53CC;&#x500D;&#x3001;&#x4E09;&#x500D;&#x957F;&#x5EA6;</p>
+</blockquote>
+<p>&#x5BC6;&#x94A5;&#x8F93;&#x5165;&#xFF1A;64Bits &#x3001;128Bits&#x3001;192Bits &#xFF08;&#x5947;&#x6821;&#x9A8C;&#x53EF;&#x9009;&#xFF09;</p>
+<p>&#x5BC6;&#x94A5;&#x7B97;&#x6CD5;&#xFF1A; DESede-CBC &#x5BC6;&#x94A5;&#x957F;&#x5EA6; &#xFF0C;&#x5206;&#x7EC4;&#x957F;&#x5EA6; 64Bits&#xFF0C; &#x521D;&#x59CB;&#x5316;IV &#x5168;0&#xFF0C;</p>
+<p>&#x586B;&#x5145;&#x89C4;&#x5219;&#xFF1A; &#x4E0D;&#x8DB3;&#x65F6;&#x586B;&#x5145; bit 0</p>
+<p>&#x7B97;&#x6CD5;&#x63CF;&#x8FF0;&#xFF1A; &#x5BC6;&#x94A5;&#x53CA;&#x7B97;&#x6CD5; DESede-CBC &#x8FDB;&#x884C;&#x8BA1;&#x7B97; &#xFF0C;&#x53D6;&#x6700;&#x540E;&#x4E00;&#x5757;&#x7ED3;&#x679C;</p>
+<p>&#x8F93;&#x51FA; 8Byte MAC&#x7ED3;&#x679C;</p>
+</li>
+<li><p>&#x56FD;&#x5BC6; 128Bits</p>
+<blockquote>
+<p>&#x540C; X9.9 MAC &#x89C4;&#x5219;&#xFF0C;&#x4F46;&#x7B97;&#x6CD5;&#x66FF;&#x6362;&#x4E3A;SM4 &#x5757;&#x5927;&#x5C0F;&#x5BF9;&#x5E94;&#x4E3A;16Byte</p>
+</blockquote>
+<p>&#x5BC6;&#x94A5;&#x8F93;&#x5165;&#xFF1A; 128Bits</p>
+<p>&#x5BC6;&#x94A5;&#x7B97;&#x6CD5;&#xFF1A; SM4-CBC &#x521D;&#x59CB;&#x5316;IV &#x5168;0&#xFF0C; &#x5206;&#x7EC4;&#x957F;&#x5EA6; 128Bits&#xFF0C;</p>
+<p>&#x586B;&#x5145;&#x89C4;&#x5219;&#xFF1A;&#x4E0D;&#x8DB3;&#x65F6;&#x586B;&#x5145; bit 0</p>
+<p>&#x7B97;&#x6CD5;&#x63CF;&#x8FF0;&#xFF1A;&#x5BF9;&#x6570;&#x636E;&#x8FDB;&#x884C;SM4-CBC&#x6A21;&#x5F0F;&#x5206;&#x7EC4;&#x52A0;&#x5BC6;&#xFF0C;&#x53D6;&#x6700;&#x540E;&#x4E00;&#x5757;&#x7ED3;&#x679C;</p>
+<p>&#x8F93;&#x51FA;&#xFF1A; 16Byte MAC&#x7ED3;&#x679C;&#xFF08;&#x5B9E;&#x9645;&#xFF09;/ &#x5DE6;&#x534A;&#x90E8;&#x5206;8Byte MAC&#x7ED3;&#x679C;&#xFF08;&#x89C4;&#x8303;&#xFF09;</p>
+</li>
+</ul>
+<h4 id="&#x94F6;&#x8054;&#x5546;&#x52A1;mac&#x7B97;&#x6CD5;">&#x94F6;&#x8054;&#x5546;&#x52A1;MAC&#x7B97;&#x6CD5;</h4>
+<blockquote>
+<p>&#x7B97;&#x6CD5;&#x8BF4;&#x660E;&#x53C2;&#x89C1;&#x3010;&#x4E2D;&#x56FD;&#x94F6;&#x8054;POS&#x7EC8;&#x7AEF;&#x89C4;&#x8303; Q/CUP 007-2006&#x3011;</p>
+<p>&#x7B97;&#x6CD5;&#x8BF4;&#x660E;&#x53C2;&#x89C1;&#x3010;&#x4E2D;&#x56FD;&#x94F6;&#x8054;&#x94F6;&#x8054;&#x5361;&#x53D7;&#x7406;&#x7EC8;&#x7AEF;&#x5E94;&#x7528;&#x89C4;&#x8303; &#x7B2C;&#x4E00;&#x90E8;&#x5206; POS&#x7EC8;&#x7AEF;&#x89C4;&#x8303; Q/CUP 009&#x3011;</p>
+</blockquote>
+<ul>
+<li><p>&#x56FD;&#x9645;&#x7B97;&#x6CD5;&#x65F6;</p>
+<blockquote>
+<p>&#x5C06;&#x6570;&#x636E;&#x5206;&#x7EC4;&#x5F02;&#x6216;&#x540E;&#x53D6;&#x6700;&#x540E;&#x4E00;&#x5757;&#xFF0C;&#x5BF9;&#x6700;&#x540E;&#x4E00;&#x5757;&#x8FDB;&#x884C; DESede&#x52A0;&#x5BC6;</p>
+</blockquote>
+<p>&#x5BC6;&#x94A5;&#x8F93;&#x5165;&#xFF1A;64Bits &#x3001;128Bits&#x3001;192Bits &#xFF08;&#x5947;&#x6821;&#x9A8C;&#x53EF;&#x9009;&#xFF09;</p>
+<p>&#x5BC6;&#x94A5;&#x7B97;&#x6CD5;&#xFF1A;DESede-ECB&#xFF0C; &#x5206;&#x7EC4;&#x957F;&#x5EA6; 64Bits&#xFF0C;</p>
+<p>&#x586B;&#x5145;&#x89C4;&#x5219;&#xFF1A;&#x4E0D;&#x8DB3;&#x65F6;&#x586B;&#x5145; bit 0</p>
+<p>&#x7B97;&#x6CD5;&#x63CF;&#x8FF0;&#xFF1A;&#x5BF9;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x5206;&#x7EC4;&#x540E;&#x8FDB;&#x884C;&#x5F02;&#x6216;&#x8BA1;&#x7B97;&#xFF0C;&#x53D6;&#xFF08;&#x7ED3;&#x679C;&#xFF0C;&#x5BC6;&#x94A5;&#xFF09;&#x8FDB;&#x884C;DESede&#x52A0;&#x5BC6;&#xFF0C;&#x53D6;&#x7ED3;&#x679C;</p>
+<p>&#x8F93;&#x51FA;&#xFF1A;4Byte MAC&#x7ED3;&#x679C; &#x5373; 8Hex MAC&#x7ED3;&#x679C;</p>
+</li>
+<li><p>&#x56FD;&#x5BC6;&#x7B97;&#x6CD5;&#x65F6;</p>
+<p>&#x6682;&#x65E0;&#xFF0C;&#x53C2;&#x89C1;&#x3010;&#x4E2D;&#x56FD;&#x94F6;&#x8054;&#x8054;&#x673A;&#x62A5;&#x6587;MAC&#x7B97;&#x6CD5; Q/CUP 006&#x3011;&#x6216;&#x3010;&#x4E2D;&#x56FD;&#x94F6;&#x8054;&#x94F6;&#x884C;&#x5361;&#x8054;&#x7F51;&#x8054;&#x5408;&#x6280;&#x672F;&#x89C4;&#x8303;V2.1(&#x91D1;&#x878D;IC&#x5361;&#x56FD;&#x5BC6;&#x7B97;&#x6CD5;&#x5347;&#x7EA7;)&#x3011;</p>
+</li>
+</ul>
+<h4 id="&#x667A;&#x80FD;&#x5361;&#x811A;&#x672C;mac">&#x667A;&#x80FD;&#x5361;&#x811A;&#x672C;MAC</h4>
+<blockquote>
+<p>&#x5728;PBOC1.0 &#x7535;&#x5B50;&#x94B1;&#x5305;&#x4E2D;&#x4F7F;&#x7528;&#x79BB;&#x6563;&#x5B50;&#x5BC6;&#x94A5;&#x8FDB;&#x884C;MAC&#x8BA1;&#x7B97;&#xFF0C;PBOC3.0&#x4E2D;&#x5DF2;&#x7ECF;&#x79FB;&#x9664;&#x4E86;&#x7535;&#x5B50;&#x94B1;&#x5305;</p>
+</blockquote>
+<p>&#x6B64;&#x7C7B;&#x591A;&#x4E3A;IC&#x5361;&#xFF08;&#x667A;&#x80FD;&#x5361;&#xFF09;&#xFF0C;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x5BC6;&#x94A5;&#x79BB;&#x6563;&#xFF0C;&#x5BF9;&#x4E8E;&#x5361;&#x7247;/&#x670D;&#x52A1;&#x5668; &#x64CD;&#x4F5C;&#x7A0D;&#x6709;&#x4E0D;&#x540C;</p>
+<p>&#x53C2;&#x89C1;IC&#x5361;&#x90E8;&#x5206;&#x7684;<a href="ic-ka-jiao-ben-an-quan-xiang-guan.html#ic-ka-jiao-ben-mac">IC&#x5361;&#x811A;&#x672C;MAC</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ge-ren-shi-bie-ma-guan-li-he-an-quan.html" class="navigation navigation-prev " aria-label="Previous page: 个人识别码管理和安全">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="mi-yao-chan-sheng.html" class="navigation navigation-next " aria-label="Next page: 密钥产生">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"消息鉴别算法","level":"1.10","depth":1,"next":{"title":"密钥产生","level":"1.11","depth":1,"path":"mi-yao-chan-sheng.md","ref":"mi-yao-chan-sheng.md","articles":[]},"previous":{"title":"个人识别码管理和安全","level":"1.9","depth":1,"path":"ge-ren-shi-bie-ma-guan-li-he-an-quan.md","ref":"ge-ren-shi-bie-ma-guan-li-he-an-quan.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"xiao-xi-jian-bie-suan-fa.md","mtime":"2020-01-14T09:16:15.975Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-14T09:16:58.459Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
